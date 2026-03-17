@@ -1,0 +1,3 @@
+# vscode setting, but except for tasks.json
+.vscode/*
+!.vscode/tasks.json
