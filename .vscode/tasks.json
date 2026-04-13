@@ -6,11 +6,11 @@
    "type": "shell",
    "command": "clang",
    "args": [
-    "${file}",
+    "${fileDirname}/*.c",
     "-o",
-    "${fileBasenameNoExtension}",
+    "${fileDirname}/${fileBasenameNoExtension}",
     "&&",
-    "./${fileBasenameNoExtension}"
+    "${fileDirname}/${fileBasenameNoExtension}"
    ],
    "group": {
     "kind": "build",
